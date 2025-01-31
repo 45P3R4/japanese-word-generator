@@ -58,14 +58,21 @@ function drawWords(words) {
     document.getElementById("katakana").textContent = words.katakana;
 }
 
+
+const MAX_SYLLABLES = 10;
+const MIN_SYLLABLES = 1;
+
 let words = generateWord(3);
     drawWords(words);
 
-
 const generateButton = document.getElementById("generate-button");
 
+
+
 generateButton.addEventListener("mouseup", () => {
-    const count = document.getElementById("count").value;
+    let count = document.getElementById("count").value;
+    count = count > MAX_SYLLABLES ? MAX_SYLLABLES : count;
+    count = count < MIN_SYLLABLES ? MIN_SYLLABLES : count;
     let words = generateWord(count);
     drawWords(words);
 });
