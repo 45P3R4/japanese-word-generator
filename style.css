@@ -32,6 +32,7 @@ input {
     border: 1px solid #00000020;
     border-radius: 8px;
     text-align: center;
+    color: #00000080;
 }
 
 .word {
