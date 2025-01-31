@@ -6,17 +6,17 @@ body {
 
 label {
     margin: 5px 0;
-    color: #00000050;
+    color: #00000080;
 }
 
 button {
     margin-top: 10px;
     width: 100%;
     height: 50px;
-    border: 1px solid #00000020;
+    border: 1px solid #00000040;
     border-radius: 8px;
     background-color: #00000010;
-    color: #00000080;
+    color: #000000AA;
 }
 
 button:hover {
@@ -29,7 +29,7 @@ button:active {
 
 input {
     padding: 5px;
-    border: 1px solid #00000020;
+    border: 1px solid #00000040;
     border-radius: 8px;
     text-align: center;
     color: #00000080;
