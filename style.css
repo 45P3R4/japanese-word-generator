@@ -1,5 +1,5 @@
 body {
-    margin-top: 30%;
+    margin-top: 30vh;
     font-family: sans-serif;
 }
 
@@ -17,7 +17,7 @@ button {
     word-wrap: break-word;
     text-transform: uppercase;
     text-align: center;
-    font-size: 30pt;
+    font-size: 7vw;
     margin: 30px 0;
 }
 
@@ -31,4 +31,8 @@ button {
     flex-direction: column;
     width: fit-content;
     margin: 0 auto;
+}
+
+
+@media screen and (max-width: 600px) {
 }
