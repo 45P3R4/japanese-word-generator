@@ -42,11 +42,13 @@ syllables.katakana = [
 function generateWord(count) {
     let words = {};
     words.english = words.hiragana = words.katakana = "";
+    const syllablesCount = syllables.english.length;
 
     for (let i = 0; i < count; i++) {
-        words.english += syllables.english[Math.floor(Math.random() * (syllables.english.length-1))];
-        words.hiragana += syllables.hiragana[Math.floor(Math.random() * (syllables.hiragana.length-1))];
-        words.katakana += syllables.katakana[Math.floor(Math.random() * (syllables.katakana.length-1))];
+        const index = Math.floor(Math.random() * (syllables.english.length));
+        words.english += syllables.english[index];
+        words.hiragana += syllables.hiragana[index];
+        words.katakana += syllables.katakana[index];
     }
 
     return words;
